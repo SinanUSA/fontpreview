@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Choose Your Product</title>
+    <style>
+        body { font-family: Arial, sans-serif; background: #e6fafa; margin: 0; padding: 0; }
+        .container { max-width: 900px; margin: 40px auto; background: #fff; border-radius: 8px; box-shadow: 0 2px 8px #0001; padding: 32px; }
+        h1 { text-align: center; }
+        .products { display: flex; justify-content: center; gap: 48px; margin-top: 40px; }
+        .product-card {
+            background: #f8f8f8;
+            border-radius: 8px;
+            box-shadow: 0 1px 4px #0002;
+            padding: 24px 18px 18px 18px;
+            text-align: center;
+            width: 200px;
+            cursor: pointer;
+            transition: box-shadow 0.2s, transform 0.2s;
+        }
+        .product-card:hover {
+            box-shadow: 0 4px 16px #0003;
+            transform: translateY(-4px) scale(1.03);
+        }
+        .product-img {
+            width: 120px;
+            height: 120px;
+            object-fit: contain;
+            margin-bottom: 16px;
+        }
+        .product-title {
+            font-size: 1.2rem;
+            font-weight: bold;
+            margin-bottom: 8px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Choose Your Product</h1>
+        <div class="products">
+            <div class="product-card" onclick="window.location.href='index.html'">
+                <img src="../wallet front.jpg" alt="Wallet" class="product-img">
+                <div class="product-title">Wallet</div>
+                <div>Personalized font preview</div>
+            </div>
+            <div class="product-card" onclick="alert('Docking Station preview coming soon!')">
+                <img src="https://img.icons8.com/ios-filled/100/000000/dock.png" alt="Docking Station" class="product-img">
+                <div class="product-title">Docking Station</div>
+                <div>Preview & customize (soon)</div>
+            </div>
+            <div class="product-card" onclick="alert('VR Stand preview coming soon!')">
+                <img src="https://img.icons8.com/ios-filled/100/000000/virtual-reality.png" alt="VR Stand" class="product-img">
+                <div class="product-title">VR Stand</div>
+                <div>Preview & customize (soon)</div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

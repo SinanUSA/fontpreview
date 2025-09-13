@@ -1,0 +1,16 @@
+{
+  "name": "font-preview-tool",
+  "version": "1.0.0",
+  "description": "A simple font preview tool that allows users to select fonts and preview custom text.",
+  "main": "src/app.js",
+  "scripts": {
+    "start": "live-server src"
+  },
+  "keywords": [
+    "font",
+    "preview",
+    "tool"
+  ],
+  "author": "Your Name",
+  "license": "MIT"
+}
