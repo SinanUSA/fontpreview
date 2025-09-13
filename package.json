@@ -4,7 +4,10 @@
   "description": "A simple font preview tool that allows users to select fonts and preview custom text.",
   "main": "src/app.js",
   "scripts": {
-    "start": "live-server src"
+    "start": "live-server src",
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
   },
   "keywords": [
     "font",
@@ -12,5 +15,8 @@
     "tool"
   ],
   "author": "Your Name",
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "vite": "^5.0.0"
+  }
 }
